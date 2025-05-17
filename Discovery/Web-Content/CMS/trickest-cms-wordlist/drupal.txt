@@ -3089,9 +3089,7 @@ core/lib/Drupal/Core/Security/RequestSanitizer.php
 core/lib/Drupal/Core/GeneratedNoLink.php
 core/lib/Drupal/Core/CronInterface.php
 core/lib/Drupal/Core/README.txt
-core/lib/Drupal/Core/Hook/Attribute/FormAlter.php
 core/lib/Drupal/Core/Hook/Attribute/ProceduralHookScanStop.php
-core/lib/Drupal/Core/Hook/Attribute/Preprocess.php
 core/lib/Drupal/Core/Hook/Attribute/HookAttributeInterface.php
 core/lib/Drupal/Core/Hook/Attribute/LegacyHook.php
 core/lib/Drupal/Core/Hook/Attribute/LegacyModuleImplementsAlter.php
@@ -5054,7 +5052,6 @@ core/themes/olivero/config/optional/block.block.olivero_primary_admin_actions.ym
 core/themes/olivero/config/optional/block.block.olivero_content.yml
 core/themes/olivero/config/optional/block.block.olivero_help.yml
 core/themes/olivero/config/optional/block.block.olivero_account_menu.yml
-core/themes/olivero/config/optional/block.block.olivero_syndicate.yml
 core/themes/olivero/config/optional/block.block.olivero_page_title.yml
 core/themes/olivero/config/optional/block.block.olivero_messages.yml
 core/themes/olivero/config/optional/block.block.olivero_breadcrumbs.yml
@@ -5740,6 +5737,7 @@ core/tests/Drupal/KernelTests/Core/Database/FetchLegacyTest.php
 core/tests/Drupal/KernelTests/Core/Database/LoggingTest.php
 core/tests/Drupal/KernelTests/Core/Database/ReservedWordTest.php
 core/tests/Drupal/KernelTests/Core/Database/InsertDefaultsTest.php
+core/tests/Drupal/KernelTests/Core/Database/TransactionTest.php
 core/tests/Drupal/KernelTests/Core/Database/SelectSubqueryTest.php
 core/tests/Drupal/KernelTests/Core/Database/SelectTest.php
 core/tests/Drupal/KernelTests/Core/Database/SelectOrderedTest.php
@@ -13597,6 +13595,8 @@ core/modules/views/tests/fixtures/update/entity-id-argument.php
 core/modules/views/tests/modules/views_test_language/views_test_language.info.yml
 core/modules/views/tests/modules/views_entity_test/src/Hook/ViewsEntityTestHooks.php
 core/modules/views/tests/modules/views_entity_test/views_entity_test.info.yml
+core/modules/views/tests/modules/views_third_party_settings_test/views_third_party_settings_test.info.yml
+core/modules/views/tests/modules/views_third_party_settings_test/config/schema/views_third_party_settings_test.schema.yml
 core/modules/views/tests/modules/views_test_rss/views_test_rss.info.yml
 core/modules/views/tests/modules/views_test_rss/views_test_rss.module
 core/modules/views/tests/modules/views_test_modal/views_test_modal.info.yml
@@ -13735,6 +13735,7 @@ core/modules/views/tests/modules/views_test_config/test_views/views.view.entity_
 core/modules/views/tests/modules/views_test_config/test_views/views.view.test_token_view.yml
 core/modules/views/tests/modules/views_test_config/test_views/views.view.test_click_sort_ajax.yml
 core/modules/views/tests/modules/views_test_config/test_views/views.view.test_page_display_path.yml
+core/modules/views/tests/modules/views_test_config/test_views/views.view.test_third_party_uninstall.yml
 core/modules/views/tests/modules/views_test_config/test_views/views.view.numeric_test.yml
 core/modules/views/tests/modules/views_test_config/test_views/views.view.test_area_order.yml
 core/modules/views/tests/modules/views_test_config/test_views/views.view.test_field_body.yml
@@ -13919,6 +13920,7 @@ core/modules/views/tests/src/Kernel/QueryGroupByTest.php
 core/modules/views/tests/src/Kernel/ViewsHooksTest.php
 core/modules/views/tests/src/Kernel/BasicTest.php
 core/modules/views/tests/src/Kernel/ViewExecutableTest.php
+core/modules/views/tests/src/Kernel/ThirdPartyUninstallTest.php
 core/modules/views/tests/src/Kernel/ViewsConfigUpdaterTest.php
 core/modules/views/tests/src/Kernel/TestViewsTest.php
 core/modules/views/tests/src/Kernel/Plugin/StyleHtmlListTest.php
